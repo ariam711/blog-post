@@ -1,0 +1,21 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": ["@mui/material", "@mui/material/utils", "@mui/styles", "@mui/base", "@mui/utils"]
+      }
+    ]
+  }
+}
